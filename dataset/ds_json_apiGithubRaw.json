@@ -1,0 +1,19 @@
+{
+	"name": "ds_json_apiGithubRaw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_githubRaw",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "gsinghpawar25/gitlearning_1/refs/heads/main/DimAirport.json"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

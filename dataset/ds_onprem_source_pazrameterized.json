@@ -1,0 +1,32 @@
+{
+	"name": "ds_onprem_source_pazrameterized",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_onprem_file_connection",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"onprem_source_file_name": {
+				"type": "string",
+				"defaultValue": "default"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": {
+					"value": "@dataset().onprem_source_file_name",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "gyani-datafactory-onprem-ADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4ad3a4a7-bfca-445f-bcbe-d00727c869a6",
+		"tenantId": "992259c6-8cb1-4d1a-9383-02e8127b5db5"
+	}
+}
